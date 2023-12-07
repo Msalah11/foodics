@@ -17,7 +17,7 @@ trait APIResponse
      */
     public function successResponse(array $data, string $message, int $code = Response::HTTP_OK): JsonResponse
     {
-        return response()->json(['data' => $data, 'message' => $message], $code);
+        return response()->json(['data' => $data, 'message' => $message, 'success' => true], $code);
     }
 
     /**
@@ -29,6 +29,6 @@ trait APIResponse
      */
     public function errorResponse(string $message, int $code = Response::HTTP_INTERNAL_SERVER_ERROR): JsonResponse
     {
-        return response()->json(['error' => $message], $code);
+        return response()->json(['error' => $message, 'success' => false], $code);
     }
 }
