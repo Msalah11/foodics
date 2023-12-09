@@ -47,10 +47,10 @@ This repository contains the source code for a Restaurant Ordering System implem
    ```
 
 ### Class Diagram
-![](\UML\sequence-diagram.png)
+![](UML\sequence-diagram.png)
 
 ### Database Schema
-![](\UML\database-schema.png)
+![](UML\database-schema.png)
 
 ### Usage
 1. Make API requests to place orders with product details
