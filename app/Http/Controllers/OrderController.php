@@ -19,7 +19,7 @@ class OrderController extends Controller
         try {
             $this->orderService->processOrder($orderDetails);
 
-            return $this->successResponse($orderDetails, 'Order placed successfully');
+            return $this->successResponse($orderDetails, __('Order placed successfully'));
         } catch (\Exception $e) {
             return $this->errorResponse($e->getMessage());
         }

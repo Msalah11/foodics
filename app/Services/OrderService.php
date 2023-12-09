@@ -3,10 +3,8 @@
 namespace App\Services;
 
 use App\Exceptions\NotEnoughStockException;
-use App\Models\Order;
-use App\Models\Product;
-use App\Models\Ingredient;
 use Illuminate\Support\Facades\DB;
+use App\Models\{Order, Product};
 
 class OrderService
 {
