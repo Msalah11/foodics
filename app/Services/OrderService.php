@@ -8,7 +8,7 @@ use App\Models\{Order, Product};
 
 class OrderService
 {
-    public function processOrder(array $orderDetails)
+    public function processOrder(array $orderDetails): void
     {
         // Collect the order details
         $productCollection = collect($orderDetails['products']);

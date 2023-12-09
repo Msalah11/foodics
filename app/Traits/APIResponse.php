@@ -15,7 +15,7 @@ trait APIResponse
      * @param int $code
      * @return JsonResponse
      */
-    public function successResponse(array $data, string $message, int $code = Response::HTTP_OK): JsonResponse
+    public function successResponse(string $message, array $data = [], int $code = Response::HTTP_OK): JsonResponse
     {
         return response()->json(['data' => $data, 'message' => $message, 'success' => true], $code);
     }
